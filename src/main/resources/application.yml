@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/press?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: pressMapper.xml
+  type-aliases-package: com.meditation.pojo
